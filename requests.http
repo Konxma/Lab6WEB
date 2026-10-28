@@ -1,0 +1,100 @@
+@baseUrl = http://localhost:3000
+@productId = 3
+
+### 1. Валідний POST: 201, очищені title/material/color, X-Response-Time
+POST {{baseUrl}}/clothes
+Content-Type: application/json
+
+{
+  "title": "  Футболка Basic  ",
+  "price": 799.99,
+  "size": "M",
+  "material": "  Бавовна  ",
+  "color": "  Синій  "
+}
+
+### 2. Заборонене поле: 400, property hackerField should not exist
+POST {{baseUrl}}/clothes
+Content-Type: application/json
+
+{
+  "title": "Футболка Basic",
+  "price": 799.99,
+  "size": "M",
+  "material": "Бавовна",
+  "color": "Синій",
+  "hackerField": "malicious"
+}
+
+### 3. Числова ціна як рядок: 400, success=false, message з помилками price
+POST {{baseUrl}}/clothes
+Content-Type: application/json
+
+{
+  "title": "Футболка Basic",
+  "price": "799.99",
+  "size": "M",
+  "material": "Бавовна",
+  "color": "Синій"
+}
+
+### 4. Query-трансформація: 200, X-Limit-Type: number, X-Applied-Limit: 5
+GET {{baseUrl}}/clothes?limit=5
+
+### Варіант 3: недопустимий size і порожній після trim material — 400
+POST {{baseUrl}}/clothes
+Content-Type: application/json
+
+{
+  "title": "Худі",
+  "price": -1,
+  "size": "XXL",
+  "material": "   ",
+  "color": "Чорний"
+}
+
+### Некоректний limit — 400
+GET {{baseUrl}}/clothes?limit=abc
+
+### Пошук і обмеження кількості — 200
+GET {{baseUrl}}/clothes?search=Basic&limit=1
+
+### Перегляд товару — 200; productId=3 лише після першого POST на чистому сервері
+GET {{baseUrl}}/clothes/{{productId}}
+
+### Часткове оновлення — 200, нові size та очищений color
+PATCH {{baseUrl}}/clothes/{{productId}}
+Content-Type: application/json
+
+{
+  "size": "XL",
+  "color": "  Зелений  "
+}
+
+### Перевірка DTO оновлення — 400
+PATCH {{baseUrl}}/clothes/{{productId}}
+Content-Type: application/json
+
+{ "price": 0 }
+
+### Збережені замовлення з роботи №5 — 201
+POST {{baseUrl}}/orders
+Content-Type: application/json
+
+{
+  "productId": "{{productId}}",
+  "quantity": 2,
+  "customerEmail": "student@example.com"
+}
+
+### Список замовлень — 200
+GET {{baseUrl}}/orders
+
+### Уніфікована помилка 404
+GET {{baseUrl}}/clothes/999999
+
+### Видалення — 204 та X-Response-Time
+DELETE {{baseUrl}}/clothes/{{productId}}
+
+### Кореневий маршрут з роботи №5
+GET {{baseUrl}}/

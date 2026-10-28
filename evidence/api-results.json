@@ -1,0 +1,2083 @@
+{
+  "generatedAt": "2026-10-28T06:56:34.716Z",
+  "results": [
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 799.99,
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 201,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "142",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"8e-CKdmNswUAXPOmh5KsYHDi5sDELg\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "236c3280-addf-45d8-b9fc-9377c477e349",
+        "x-request-trace-match": "true",
+        "x-response-time": "4.62ms"
+      },
+      "body": {
+        "id": "3",
+        "title": "Футболка Basic",
+        "slug": "futbolka-basic",
+        "price": 799.99,
+        "size": "M",
+        "material": "Бавовна",
+        "color": "Синій"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 799.99,
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  ",
+        "hackerField": "malicious"
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "181",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"b5-YYVpVxf6D6VRrWs7tx4HhgCanq8\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.513Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "property hackerField should not exist"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": "799.99",
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "240",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"f0-YGnHbQpgwexBHHIC7UUtOt3lv38\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.519Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "price must be a positive number",
+          "price must be a number conforming to the specified constraints"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "Товар 0",
+        "price": 799.99,
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 201,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "125",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"7d-Q8N+rhX23J9f+ScRpLgktEW+RK0\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "44d085f7-3b04-4ab9-b391-64a21f5b8d9d",
+        "x-request-trace-match": "true",
+        "x-response-time": "1.08ms"
+      },
+      "body": {
+        "id": "4",
+        "title": "Товар 0",
+        "slug": "tovar-0",
+        "price": 799.99,
+        "size": "M",
+        "material": "Бавовна",
+        "color": "Синій"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "Товар 1",
+        "price": 799.99,
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 201,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "125",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"7d-wEu45bbU5xssVpCO3W5dMRBF2m4\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "6c4ee94a-5abb-41a7-985f-f4107a0739a5",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.48ms"
+      },
+      "body": {
+        "id": "5",
+        "title": "Товар 1",
+        "slug": "tovar-1",
+        "price": 799.99,
+        "size": "M",
+        "material": "Бавовна",
+        "color": "Синій"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "Товар 2",
+        "price": 799.99,
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 201,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "125",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"7d-g7wr9OAn49v4CA8x0DFQsptDBvQ\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "9b5ae26a-20ba-4a7d-8a03-862a69cd09dc",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.69ms"
+      },
+      "body": {
+        "id": "6",
+        "title": "Товар 2",
+        "slug": "tovar-2",
+        "price": 799.99,
+        "size": "M",
+        "material": "Бавовна",
+        "color": "Синій"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "Товар 3",
+        "price": 799.99,
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 201,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "125",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"7d-YGssbF8tY/WXBhM2XfV0D/Gja/Y\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "5a73a78c-0737-48af-9b73-428be9cdd95e",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.35ms"
+      },
+      "body": {
+        "id": "7",
+        "title": "Товар 3",
+        "slug": "tovar-3",
+        "price": 799.99,
+        "size": "M",
+        "material": "Бавовна",
+        "color": "Синій"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clothes?limit=5",
+      "status": 200,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "696",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"2b8-ZqSIbx2quOH0IiEVNDaPTLgBuzs\"",
+        "keep-alive": "timeout=5",
+        "x-api-version": "1.0",
+        "x-applied-limit": "5",
+        "x-limit-type": "number",
+        "x-powered-by": "Express",
+        "x-request-id": "a7b1df8a-3c18-4dd8-8722-2a0b7b517f9f",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.56ms",
+        "x-service-status": "operational"
+      },
+      "body": [
+        {
+          "id": "1",
+          "title": "Футболка Classic",
+          "slug": "futbolka-classic",
+          "price": 650,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Білий"
+        },
+        {
+          "id": "2",
+          "title": "Худі Urban",
+          "slug": "khudi-urban",
+          "price": 1400,
+          "size": "L",
+          "material": "Бавовна та поліестер",
+          "color": "Чорний"
+        },
+        {
+          "id": "3",
+          "title": "Футболка Basic",
+          "slug": "futbolka-basic",
+          "price": 799.99,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "4",
+          "title": "Товар 0",
+          "slug": "tovar-0",
+          "price": 799.99,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "5",
+          "title": "Товар 1",
+          "slug": "tovar-1",
+          "price": 799.99,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Синій"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/clothes?limit=0",
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "180",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"b4-ZKU9wW0UIjjjPNsMObsCrm4tI7o\"",
+        "keep-alive": "timeout=5",
+        "x-api-version": "1.0",
+        "x-powered-by": "Express",
+        "x-service-status": "operational"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.550Z",
+        "path": "/clothes?limit=0",
+        "method": "GET",
+        "error": "Bad Request",
+        "message": [
+          "limit must not be less than 1"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clothes?limit=-1",
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "181",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"b5-dYcPtfD0KkGo51pbawx+/CeR6P8\"",
+        "keep-alive": "timeout=5",
+        "x-api-version": "1.0",
+        "x-powered-by": "Express",
+        "x-service-status": "operational"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.555Z",
+        "path": "/clothes?limit=-1",
+        "method": "GET",
+        "error": "Bad Request",
+        "message": [
+          "limit must not be less than 1"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clothes?limit=1.5",
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "184",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"b8-De9UkiFA7WbskiG9g7UkvNxHw2M\"",
+        "keep-alive": "timeout=5",
+        "x-api-version": "1.0",
+        "x-powered-by": "Express",
+        "x-service-status": "operational"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.558Z",
+        "path": "/clothes?limit=1.5",
+        "method": "GET",
+        "error": "Bad Request",
+        "message": [
+          "limit must be an integer number"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clothes?limit=nope",
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "217",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"d9-DTn8ra5Z6gqTOZ7mclAlmEW8tqI\"",
+        "keep-alive": "timeout=5",
+        "x-api-version": "1.0",
+        "x-powered-by": "Express",
+        "x-service-status": "operational"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.561Z",
+        "path": "/clothes?limit=nope",
+        "method": "GET",
+        "error": "Bad Request",
+        "message": [
+          "limit must not be less than 1",
+          "limit must be an integer number"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clothes?limit=",
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "179",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"b3-I2YoDVC1Ms+l8X0Deg67DZesKjs\"",
+        "keep-alive": "timeout=5",
+        "x-api-version": "1.0",
+        "x-powered-by": "Express",
+        "x-service-status": "operational"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.568Z",
+        "path": "/clothes?limit=",
+        "method": "GET",
+        "error": "Bad Request",
+        "message": [
+          "limit must not be less than 1"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clothes?limit=2&limit=3",
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "222",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"de-IvQipfP8cP5p3PVxK2PKLYkroyA\"",
+        "keep-alive": "timeout=5",
+        "x-api-version": "1.0",
+        "x-powered-by": "Express",
+        "x-service-status": "operational"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.572Z",
+        "path": "/clothes?limit=2&limit=3",
+        "method": "GET",
+        "error": "Bad Request",
+        "message": [
+          "limit must not be less than 1",
+          "limit must be an integer number"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clothes?hackerField=1",
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "194",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"c2-g9nf+3pDokt3y81NJc709TkATBQ\"",
+        "keep-alive": "timeout=5",
+        "x-api-version": "1.0",
+        "x-powered-by": "Express",
+        "x-service-status": "operational"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.575Z",
+        "path": "/clothes?hackerField=1",
+        "method": "GET",
+        "error": "Bad Request",
+        "message": [
+          "property hackerField should not exist"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clothes?search=%20Basic%20&limit=1",
+      "status": 200,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "144",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"90-ZNK4qpBYMrJDcs7WX2VrSjpjt7o\"",
+        "keep-alive": "timeout=5",
+        "x-api-version": "1.0",
+        "x-applied-limit": "1",
+        "x-limit-type": "number",
+        "x-powered-by": "Express",
+        "x-request-id": "429f3bf8-ca0e-4097-8e8b-ff65c385a9cd",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.33ms",
+        "x-service-status": "operational"
+      },
+      "body": [
+        {
+          "id": "3",
+          "title": "Футболка Basic",
+          "slug": "futbolka-basic",
+          "price": 799.99,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Синій"
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 0,
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "175",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"af-qwo0QeOY7HVYCsVdWj6yB10FVfw\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.582Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "price must be a positive number"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": -1,
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "175",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"af-HDn5d1a0bDdU1d5l5L4pasGHlp4\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.588Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "price must be a positive number"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 12.345,
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "206",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"ce-tTShJ6YKcrI8H8aHbKgPb4FhuEc\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.591Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "price must be a number conforming to the specified constraints"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": null,
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "240",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"f0-j89XT7qEMzDBTWYErbKEHSyHmVk\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.593Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "price must be a positive number",
+          "price must be a number conforming to the specified constraints"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": true,
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "240",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"f0-5vcD8IT2qUfIoUIqICST6ohQmQs\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.596Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "price must be a positive number",
+          "price must be a number conforming to the specified constraints"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 799.99,
+        "size": "XXL",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "201",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"c9-ujnGn68+/M5PuxtVaq84mU0nQPo\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.599Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "size must be one of the following values: XS, S, M, L, XL"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 799.99,
+        "size": "m",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "201",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"c9-xFZRJig86DRYTyczX9uCBDa00fM\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.602Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "size must be one of the following values: XS, S, M, L, XL"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 799.99,
+        "size": 42,
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "201",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"c9-POMd2Edz5mNSab56twRMejysXCc\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.604Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "size must be one of the following values: XS, S, M, L, XL"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "   ",
+        "price": 799.99,
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "169",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"a9-rI0uv9/Jmd6T81SipPMyfijjGlc\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.607Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "title should not be empty"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 799.99,
+        "size": "M",
+        "material": "   ",
+        "color": "  Синій  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "172",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"ac-HtINC0E1GgTCWkh/pHgtp4nEsEs\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.609Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "material should not be empty"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 799.99,
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": false
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "166",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"a6-F9YxqskuGL1xacbq50t2rcHqttU\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.612Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "color must be a string"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {},
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "465",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"1d1-YmIBuKAgvcIAo0NhKZl1rka3Wjg\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.616Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "title should not be empty",
+          "title must be a string",
+          "price must be a positive number",
+          "price must be a number conforming to the specified constraints",
+          "size must be one of the following values: XS, S, M, L, XL",
+          "material should not be empty",
+          "material must be a string",
+          "color should not be empty",
+          "color must be a string"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": [],
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "465",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"1d1-QgPqv3TD9tjZHa0/q4U1oeAMN1M\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.618Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "title should not be empty",
+          "title must be a string",
+          "price must be a positive number",
+          "price must be a number conforming to the specified constraints",
+          "size must be one of the following values: XS, S, M, L, XL",
+          "material should not be empty",
+          "material must be a string",
+          "color should not be empty",
+          "color must be a string"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": null,
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "192",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"c0-ABIfWg9XZ9Jha0S68WcoiVOYl7I\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.621Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "Unexpected token 'n', \"null\" is not valid JSON"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "price": 799.99,
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "194",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"c2-QmYA3EHAI0hkxMTFZempifUgygE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.624Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "title should not be empty",
+          "title must be a string"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "240",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"f0-a0La51Nh5aPZiKQIX4pRMvjpzWE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.627Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "price must be a positive number",
+          "price must be a number conforming to the specified constraints"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 799.99,
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "201",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"c9-tjgKOly1n8CpXU68nJiBMCspSNw\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.630Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "size must be one of the following values: XS, S, M, L, XL"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 799.99,
+        "size": "M",
+        "color": "  Синій  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "200",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"c8-5P3U9pyYd6aUE22L4JABeghVqa4\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.636Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "material should not be empty",
+          "material must be a string"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 799.99,
+        "size": "M",
+        "material": "  Бавовна  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "194",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"c2-N+qIYw93JXNGFKIMbALPuwf6dYQ\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.640Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "color should not be empty",
+          "color must be a string"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 799.99,
+        "size": "XS",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 201,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "143",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"8f-lZ9lphEAve5vrA/J7sntRUcQwxU\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "2ecd14f7-347c-4b79-91c5-827fc0d8cc47",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.33ms"
+      },
+      "body": {
+        "id": "8",
+        "title": "Футболка Basic",
+        "slug": "futbolka-basic",
+        "price": 799.99,
+        "size": "XS",
+        "material": "Бавовна",
+        "color": "Синій"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 799.99,
+        "size": "S",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 201,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "142",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"8e-kmojtnTrKG5YTW0tRv2c2TObS1E\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "88117758-1c24-4a22-a190-97eba36c6392",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.39ms"
+      },
+      "body": {
+        "id": "9",
+        "title": "Футболка Basic",
+        "slug": "futbolka-basic",
+        "price": 799.99,
+        "size": "S",
+        "material": "Бавовна",
+        "color": "Синій"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 799.99,
+        "size": "M",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 201,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "143",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"8f-YPylIuvKEKBLNFiGpH+Chedg4g0\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "4d0ff93b-80d9-4e75-902d-d09faf608f4a",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.31ms"
+      },
+      "body": {
+        "id": "10",
+        "title": "Футболка Basic",
+        "slug": "futbolka-basic",
+        "price": 799.99,
+        "size": "M",
+        "material": "Бавовна",
+        "color": "Синій"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 799.99,
+        "size": "L",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 201,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "143",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"8f-SVD4MEw1qDxUNvVxf9UVlwZYSm8\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "e06d9ab0-edb4-49d2-a5ae-5440e88989c6",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.29ms"
+      },
+      "body": {
+        "id": "11",
+        "title": "Футболка Basic",
+        "slug": "futbolka-basic",
+        "price": 799.99,
+        "size": "L",
+        "material": "Бавовна",
+        "color": "Синій"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": {
+        "title": "  Футболка Basic  ",
+        "price": 799.99,
+        "size": "XL",
+        "material": "  Бавовна  ",
+        "color": "  Синій  "
+      },
+      "status": 201,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "144",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"90-w7NlOT66+WjtANvZgRDO/fjXRZw\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "601e9b7c-7831-4743-b53b-7a2aa92de295",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.28ms"
+      },
+      "body": {
+        "id": "12",
+        "title": "Футболка Basic",
+        "slug": "futbolka-basic",
+        "price": 799.99,
+        "size": "XL",
+        "material": "Бавовна",
+        "color": "Синій"
+      }
+    },
+    {
+      "method": "PATCH",
+      "path": "/clothes/3",
+      "requestBody": {
+        "title": "  Худі Basic  ",
+        "size": "XL"
+      },
+      "status": 200,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "132",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"84-ULRe6uFcLz0SfYBZ9Vgayi77ke8\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "5e37c87e-beea-4c85-9e33-53975e66d25a",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.52ms"
+      },
+      "body": {
+        "id": "3",
+        "title": "Худі Basic",
+        "slug": "khudi-basic",
+        "price": 799.99,
+        "size": "XL",
+        "material": "Бавовна",
+        "color": "Синій"
+      }
+    },
+    {
+      "method": "PATCH",
+      "path": "/clothes/3",
+      "requestBody": {
+        "price": 0
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "178",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"b2-X1komk1Pm19G6x/fXGb5pfvkM0o\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.659Z",
+        "path": "/clothes/3",
+        "method": "PATCH",
+        "error": "Bad Request",
+        "message": [
+          "price must be a positive number"
+        ]
+      }
+    },
+    {
+      "method": "PATCH",
+      "path": "/clothes/3",
+      "requestBody": {
+        "price": "100"
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "243",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"f3-5Al/CJIS77mqBoENRrddX5N+Pf4\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.662Z",
+        "path": "/clothes/3",
+        "method": "PATCH",
+        "error": "Bad Request",
+        "message": [
+          "price must be a positive number",
+          "price must be a number conforming to the specified constraints"
+        ]
+      }
+    },
+    {
+      "method": "PATCH",
+      "path": "/clothes/3",
+      "requestBody": {
+        "size": "XXL"
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "204",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"cc-yfR9ho3mrh/VNlV7JJy/YkOUF+4\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.665Z",
+        "path": "/clothes/3",
+        "method": "PATCH",
+        "error": "Bad Request",
+        "message": [
+          "size must be one of the following values: XS, S, M, L, XL"
+        ]
+      }
+    },
+    {
+      "method": "PATCH",
+      "path": "/clothes/3",
+      "requestBody": {
+        "material": "  "
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "175",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"af-vP3jQ6sTImrGafe9WHz1DRlK/JI\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.667Z",
+        "path": "/clothes/3",
+        "method": "PATCH",
+        "error": "Bad Request",
+        "message": [
+          "material should not be empty"
+        ]
+      }
+    },
+    {
+      "method": "PATCH",
+      "path": "/clothes/3",
+      "requestBody": {
+        "color": 5
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "169",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"a9-BfpcLdypVIANCBFzRTCHTNWuxXM\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.670Z",
+        "path": "/clothes/3",
+        "method": "PATCH",
+        "error": "Bad Request",
+        "message": [
+          "color must be a string"
+        ]
+      }
+    },
+    {
+      "method": "PATCH",
+      "path": "/clothes/3",
+      "requestBody": {
+        "hackerField": true
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "184",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"b8-mWpYVzLPs0OJJ5t49OjgzoYMFUI\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.672Z",
+        "path": "/clothes/3",
+        "method": "PATCH",
+        "error": "Bad Request",
+        "message": [
+          "property hackerField should not exist"
+        ]
+      }
+    },
+    {
+      "method": "PATCH",
+      "path": "/clothes/3",
+      "requestBody": {},
+      "status": 200,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "132",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"84-ULRe6uFcLz0SfYBZ9Vgayi77ke8\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "d825d16b-7cfb-43b6-be99-b67c3f6ec1bf",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.53ms"
+      },
+      "body": {
+        "id": "3",
+        "title": "Худі Basic",
+        "slug": "khudi-basic",
+        "price": 799.99,
+        "size": "XL",
+        "material": "Бавовна",
+        "color": "Синій"
+      }
+    },
+    {
+      "method": "PATCH",
+      "path": "/clothes/3",
+      "requestBody": {
+        "price": null,
+        "title": null
+      },
+      "status": 200,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "132",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"84-ULRe6uFcLz0SfYBZ9Vgayi77ke8\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "78ba02a7-b09a-4929-9035-8e7b6414d3b8",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.29ms"
+      },
+      "body": {
+        "id": "3",
+        "title": "Худі Basic",
+        "slug": "khudi-basic",
+        "price": 799.99,
+        "size": "XL",
+        "material": "Бавовна",
+        "color": "Синій"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clothes/999999",
+      "status": 404,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "187",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"bb-79deVZb4a4IruzGSWRRn2wVp7GM\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "70b5da50-6d03-4b01-bec9-6e77df513872",
+        "x-request-trace-match": "true"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 404,
+        "timestamp": "2026-10-28T06:56:34.682Z",
+        "path": "/clothes/999999",
+        "method": "GET",
+        "error": "Not Found",
+        "message": [
+          "Товар 999999 не знайдено"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/missing?limit=5",
+      "status": 404,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "176",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"b0-mVS/l4JgoCq9wbEcRbGQPZ1N7zM\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 404,
+        "timestamp": "2026-10-28T06:56:34.683Z",
+        "path": "/missing?limit=5",
+        "method": "GET",
+        "error": "Not Found",
+        "message": [
+          "Cannot GET /missing?limit=5"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clothes",
+      "status": 200,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1658",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"67a-1Jv09noteJaePXG8Ldg1C9X7Fiw\"",
+        "keep-alive": "timeout=5",
+        "x-api-version": "1.0",
+        "x-powered-by": "Express",
+        "x-request-id": "a15a5f0d-48c1-4cf5-9cca-55015a56a040",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.20ms",
+        "x-service-status": "operational"
+      },
+      "body": [
+        {
+          "id": "1",
+          "title": "Футболка Classic",
+          "slug": "futbolka-classic",
+          "price": 650,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Білий"
+        },
+        {
+          "id": "2",
+          "title": "Худі Urban",
+          "slug": "khudi-urban",
+          "price": 1400,
+          "size": "L",
+          "material": "Бавовна та поліестер",
+          "color": "Чорний"
+        },
+        {
+          "id": "3",
+          "title": "Худі Basic",
+          "slug": "khudi-basic",
+          "price": 799.99,
+          "size": "XL",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "4",
+          "title": "Товар 0",
+          "slug": "tovar-0",
+          "price": 799.99,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "5",
+          "title": "Товар 1",
+          "slug": "tovar-1",
+          "price": 799.99,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "6",
+          "title": "Товар 2",
+          "slug": "tovar-2",
+          "price": 799.99,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "7",
+          "title": "Товар 3",
+          "slug": "tovar-3",
+          "price": 799.99,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "8",
+          "title": "Футболка Basic",
+          "slug": "futbolka-basic",
+          "price": 799.99,
+          "size": "XS",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "9",
+          "title": "Футболка Basic",
+          "slug": "futbolka-basic",
+          "price": 799.99,
+          "size": "S",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "10",
+          "title": "Футболка Basic",
+          "slug": "futbolka-basic",
+          "price": 799.99,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "11",
+          "title": "Футболка Basic",
+          "slug": "futbolka-basic",
+          "price": 799.99,
+          "size": "L",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "12",
+          "title": "Футболка Basic",
+          "slug": "futbolka-basic",
+          "price": 799.99,
+          "size": "XL",
+          "material": "Бавовна",
+          "color": "Синій"
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/clothes",
+      "status": 200,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1658",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"67a-1Jv09noteJaePXG8Ldg1C9X7Fiw\"",
+        "keep-alive": "timeout=5",
+        "x-api-version": "1.0",
+        "x-powered-by": "Express",
+        "x-request-id": "262d317d-e595-47b8-977a-dd34ed267ead",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.19ms",
+        "x-service-status": "operational"
+      },
+      "body": [
+        {
+          "id": "1",
+          "title": "Футболка Classic",
+          "slug": "futbolka-classic",
+          "price": 650,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Білий"
+        },
+        {
+          "id": "2",
+          "title": "Худі Urban",
+          "slug": "khudi-urban",
+          "price": 1400,
+          "size": "L",
+          "material": "Бавовна та поліестер",
+          "color": "Чорний"
+        },
+        {
+          "id": "3",
+          "title": "Худі Basic",
+          "slug": "khudi-basic",
+          "price": 799.99,
+          "size": "XL",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "4",
+          "title": "Товар 0",
+          "slug": "tovar-0",
+          "price": 799.99,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "5",
+          "title": "Товар 1",
+          "slug": "tovar-1",
+          "price": 799.99,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "6",
+          "title": "Товар 2",
+          "slug": "tovar-2",
+          "price": 799.99,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "7",
+          "title": "Товар 3",
+          "slug": "tovar-3",
+          "price": 799.99,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "8",
+          "title": "Футболка Basic",
+          "slug": "futbolka-basic",
+          "price": 799.99,
+          "size": "XS",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "9",
+          "title": "Футболка Basic",
+          "slug": "futbolka-basic",
+          "price": 799.99,
+          "size": "S",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "10",
+          "title": "Футболка Basic",
+          "slug": "futbolka-basic",
+          "price": 799.99,
+          "size": "M",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "11",
+          "title": "Футболка Basic",
+          "slug": "futbolka-basic",
+          "price": 799.99,
+          "size": "L",
+          "material": "Бавовна",
+          "color": "Синій"
+        },
+        {
+          "id": "12",
+          "title": "Футболка Basic",
+          "slug": "futbolka-basic",
+          "price": 799.99,
+          "size": "XL",
+          "material": "Бавовна",
+          "color": "Синій"
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/orders",
+      "requestBody": {
+        "productId": "3",
+        "quantity": 2,
+        "customerEmail": " student@example.com "
+      },
+      "status": 201,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "328",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"148-m7Lj+d5XcVqRk9FSmKnpYR9i1G0\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "5fe45c54-0718-4536-8f25-bc6bff8e6159",
+        "x-request-trace-match": "true",
+        "x-response-time": "1.80ms"
+      },
+      "body": {
+        "orderId": "ord-b7ad6c59-c5b9-4fcd-88e1-ce360c36b937",
+        "customerEmail": "student@example.com",
+        "productId": "3",
+        "productTitle": "Худі Basic",
+        "productSlug": "khudi-basic",
+        "unitPrice": 799.99,
+        "quantity": 2,
+        "subtotal": 1599.98,
+        "taxAmount": 320,
+        "total": 1919.98,
+        "currency": "UAH",
+        "status": "confirmed",
+        "createdAt": "2026-10-28T06:56:34.693Z"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/orders",
+      "status": 200,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "330",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"14a-exbchNxol5ks6Q9k5Fnb/7E4lbA\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "298c9439-9847-4bf7-bea7-69c412b0a4e2",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.16ms"
+      },
+      "body": [
+        {
+          "orderId": "ord-b7ad6c59-c5b9-4fcd-88e1-ce360c36b937",
+          "customerEmail": "student@example.com",
+          "productId": "3",
+          "productTitle": "Худі Basic",
+          "productSlug": "khudi-basic",
+          "unitPrice": 799.99,
+          "quantity": 2,
+          "subtotal": 1599.98,
+          "taxAmount": 320,
+          "total": 1919.98,
+          "currency": "UAH",
+          "status": "confirmed",
+          "createdAt": "2026-10-28T06:56:34.693Z"
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/orders",
+      "requestBody": {
+        "productId": "999999",
+        "quantity": 1,
+        "customerEmail": "student@example.com"
+      },
+      "status": 404,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "180",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"b4-IYw1LRu8VU5X6Ddoel63qHXayFo\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "582f94be-e2ce-445c-b1c0-634800e9fdaa",
+        "x-request-trace-match": "true"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 404,
+        "timestamp": "2026-10-28T06:56:34.698Z",
+        "path": "/orders",
+        "method": "POST",
+        "error": "Not Found",
+        "message": [
+          "Товар 999999 не знайдено"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/orders",
+      "requestBody": {
+        "productId": "3",
+        "quantity": 0,
+        "customerEmail": "bad"
+      },
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "208",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"d0-JowAejHu7mHNxCJj75LSswygoZY\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.701Z",
+        "path": "/orders",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "quantity must not be less than 1",
+          "customerEmail must be an email"
+        ]
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/clothes/3",
+      "status": 204,
+      "headers": {
+        "connection": "keep-alive",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "cfd2375b-af77-483c-96ed-d37e40548fc0",
+        "x-request-trace-match": "true",
+        "x-response-time": "0.22ms"
+      },
+      "body": ""
+    },
+    {
+      "method": "GET",
+      "path": "/clothes/3",
+      "status": 404,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "177",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"b1-iIDEmrYkGC9nVeIWOqVfaCXAmN8\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-request-id": "5ed982a6-7d5b-48d2-a00e-f847bab82207",
+        "x-request-trace-match": "true"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 404,
+        "timestamp": "2026-10-28T06:56:34.707Z",
+        "path": "/clothes/3",
+        "method": "GET",
+        "error": "Not Found",
+        "message": [
+          "Товар 3 не знайдено"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/",
+      "status": 200,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "12",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"c-Lve95gjOVATpfV8EL5X4nxwjKHE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express",
+        "x-response-time": "0.13ms"
+      },
+      "body": "Hello World!"
+    },
+    {
+      "method": "POST",
+      "path": "/clothes",
+      "requestBody": "{\"title\":",
+      "status": 400,
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "172",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 28 Oct 2026 06:56:34 GMT",
+        "etag": "W/\"ac-EWduqLwfyUPCWy8XYkNUkX4SNBA\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": {
+        "success": false,
+        "statusCode": 400,
+        "timestamp": "2026-10-28T06:56:34.711Z",
+        "path": "/clothes",
+        "method": "POST",
+        "error": "Bad Request",
+        "message": [
+          "Unexpected end of JSON input"
+        ]
+      }
+    }
+  ]
+}

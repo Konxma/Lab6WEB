@@ -1,0 +1,108 @@
+<!doctype html><html lang="uk"><meta charset="utf-8"><title>Лабораторна №6 — результати перевірки</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f0f3f7;color:#192536;font:16px Segoe UI,Arial,sans-serif}main{max-width:1460px;margin:auto;padding:26px 32px}header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}h1{font-size:26px;margin:0 0 7px}p{margin:0;color:#546679}nav{display:flex;gap:10px}button{border:1px solid #bccada;background:white;padding:10px 15px;border-radius:7px;font:inherit;cursor:pointer}.badge{background:#d7f5e5;color:#10633c;padding:7px 12px;border-radius:25px;font-weight:600}.terminal{background:#111c29;color:#dce8f4;padding:20px 24px;border-radius:12px;border-top:7px solid #2c4258;overflow:auto}pre{font:13px/1.4 Consolas,'Courier New',monospace;margin:0;white-space:pre-wrap;overflow-wrap:anywhere}.caption{font-size:13px;margin:12px 0 18px;color:#546679}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}article{background:white;border:1px solid #d5deea;border-radius:10px;padding:17px 20px}h3{margin:0 0 12px;font-size:17px}b{float:right;color:#126b49}section[hidden]{display:none}</style>
+<main><header><div><h1>Практична робота №6 · №23 → варіант 3</h1><p>Одяг та взуття · фактичний запуск NestJS і HTTP-перевірки</p></div><span class="badge">12 перевірок · 0 помилок</span></header>
+<nav><button onclick="show('logs')">Журнал сервера</button><button onclick="show('responses')">Відповіді API</button><button onclick="show('tests')">Результати тестів</button></nav>
+<p class="caption">Джерела: server-and-tests.log та api-results.json. Вміст нижче взято з реального запуску; час показано як у журналі.</p>
+<section id="logs"><div class="terminal"><pre>[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /clothes виконано за 4.62ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 201 +11.47ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +3.06ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +2.08ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /clothes виконано за 1.08ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 201 +2.55ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /clothes виконано за 0.48ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 201 +1.90ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /clothes виконано за 0.69ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 201 +2.26ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /clothes виконано за 0.35ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 201 +1.58ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] GET /clothes?limit=5 виконано за 0.56ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?limit=5 200 +2.16ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?limit=0 400 +2.45ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?limit=-1 400 +1.90ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?limit=1.5 400 +1.33ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?limit=nope 400 +1.40ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?limit= 400 +1.65ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?limit=2&amp;limit=3 400 +1.94ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?hackerField=1 400 +1.26ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] GET /clothes?search=%20Basic%20&amp;limit=1 виконано за 0.33ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?search=%20Basic%20&amp;limit=1 200 +1.16ms [127.0.0.1]</pre></div><p class="caption">Початковий фрагмент журналу: успішне створення, відхилення зайвого поля й неправильної ціни, GET ?limit=5. Повний журнал збережено поруч.</p></section>
+<section id="responses" hidden><div class="grid"><article><h3>POST /clothes <b>201</b></h3><pre>{
+  &quot;headers&quot;: {
+    &quot;x-response-time&quot;: &quot;4.62ms&quot;
+  },
+  &quot;body&quot;: {
+    &quot;id&quot;: &quot;3&quot;,
+    &quot;title&quot;: &quot;Футболка Basic&quot;,
+    &quot;slug&quot;: &quot;futbolka-basic&quot;,
+    &quot;price&quot;: 799.99,
+    &quot;size&quot;: &quot;M&quot;,
+    &quot;material&quot;: &quot;Бавовна&quot;,
+    &quot;color&quot;: &quot;Синій&quot;
+  }
+}</pre></article><article><h3>POST /clothes <b>400</b></h3><pre>{
+  &quot;headers&quot;: {},
+  &quot;body&quot;: {
+    &quot;success&quot;: false,
+    &quot;statusCode&quot;: 400,
+    &quot;timestamp&quot;: &quot;2026-10-28T06:56:34.513Z&quot;,
+    &quot;path&quot;: &quot;/clothes&quot;,
+    &quot;method&quot;: &quot;POST&quot;,
+    &quot;error&quot;: &quot;Bad Request&quot;,
+    &quot;message&quot;: [
+      &quot;property hackerField should not exist&quot;
+    ]
+  }
+}</pre></article><article><h3>POST /clothes <b>400</b></h3><pre>{
+  &quot;headers&quot;: {},
+  &quot;body&quot;: {
+    &quot;success&quot;: false,
+    &quot;statusCode&quot;: 400,
+    &quot;timestamp&quot;: &quot;2026-10-28T06:56:34.519Z&quot;,
+    &quot;path&quot;: &quot;/clothes&quot;,
+    &quot;method&quot;: &quot;POST&quot;,
+    &quot;error&quot;: &quot;Bad Request&quot;,
+    &quot;message&quot;: [
+      &quot;price must be a positive number&quot;,
+      &quot;price must be a number conforming to the specified constraints&quot;
+    ]
+  }
+}</pre></article><article><h3>GET /clothes?limit=5 <b>200</b></h3><pre>{
+  &quot;headers&quot;: {
+    &quot;x-applied-limit&quot;: &quot;5&quot;,
+    &quot;x-limit-type&quot;: &quot;number&quot;,
+    &quot;x-response-time&quot;: &quot;0.56ms&quot;
+  },
+  &quot;body&quot;: {
+    &quot;count&quot;: 5,
+    &quot;firstItem&quot;: {
+      &quot;id&quot;: &quot;1&quot;,
+      &quot;title&quot;: &quot;Футболка Classic&quot;,
+      &quot;slug&quot;: &quot;futbolka-classic&quot;,
+      &quot;price&quot;: 650,
+      &quot;size&quot;: &quot;M&quot;,
+      &quot;material&quot;: &quot;Бавовна&quot;,
+      &quot;color&quot;: &quot;Білий&quot;
+    }
+  }
+}</pre></article></div></section>
+<section id="tests" hidden><div class="terminal"><pre>✔ TrimPipe: вкладені об’єкти, масиви та збереження типів (1.6325ms)
+  ✔ 1. Валідний POST: 201, trim та X-Response-Time (74.4721ms)
+  ✔ 2. Заборонені поля: whitelist + forbidNonWhitelisted (9.1419ms)
+  ✔ 3. Рядок замість числової ціни: уніфікована помилка (6.0929ms)
+  ✔ 4. GET ?limit=5: реальне число та п’ять товарів (56.875ms)
+  ✔ 5. Межі варіанта 3: ціна, розмір, матеріал, колір і назва (75.5414ms)
+  ✔ 6. PATCH: часткове оновлення, валідація та новий slug (25.536ms)
+  ✔ 7. Єдиний формат 404 для сервісу та невідомого маршруту (4.5899ms)
+  ✔ 8. Замовлення та request scope з лабораторної №5 (17.0056ms)
+  ✔ 9. DELETE: 204, заголовок часу та подальший 404 (5.6472ms)
+  ✔ 10. Кореневий маршрут та синтаксично неправильний JSON (4.0432ms)
+✔ Лабораторна №6: реальний HTTP-конвеєр та регресія модулів №5 (722.5313ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2627.6439</pre></div><p class="caption">Перевірено 61 HTTP-запитів. Підсумок включає 10 HTTP-сценаріїв, їх батьківський тест та окрему перевірку TrimPipe.</p></section></main>
+<script>function show(id){for(const section of document.querySelectorAll('section'))section.hidden=section.id!==id}</script></html>

@@ -1,0 +1,121 @@
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [NestFactory] Starting Nest application...
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [InstanceLoader] AppModule dependencies initialized +14ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [InstanceLoader] HomeModule dependencies initialized +1ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [InstanceLoader] SharedModule dependencies initialized +0ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [InstanceLoader] ClothesModule dependencies initialized +1ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [InstanceLoader] OrdersModule dependencies initialized +1ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [RoutesResolver] HomeController {/}: +10ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [RouterExplorer] Mapped {/, GET} route +3ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [RoutesResolver] ClothesController {/clothes}: +0ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [RouterExplorer] Mapped {/clothes, GET} route +2ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [RouterExplorer] Mapped {/clothes/:id, GET} route +1ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [RouterExplorer] Mapped {/clothes, POST} route +0ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [RouterExplorer] Mapped {/clothes/:id, PATCH} route +0ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [RouterExplorer] Mapped {/clothes/:id, DELETE} route +1ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [RoutesResolver] OrdersController {/orders}: +0ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [RouterExplorer] Mapped {/orders, POST} route +0ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [RouterExplorer] Mapped {/orders, GET} route +1ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [ClothesService] Завантажено 2 демонстраційні товари: одяг та взуття.
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [OrdersService] Сервіс замовлень готовий до прийому замовлень.
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [NestApplication] Nest application successfully started +1ms
+✔ TrimPipe: вкладені об’єкти, масиви та збереження типів (1.6325ms)
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /clothes виконано за 4.62ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 201 +11.47ms [127.0.0.1]
+▶ Лабораторна №6: реальний HTTP-конвеєр та регресія модулів №5
+  ✔ 1. Валідний POST: 201, trim та X-Response-Time (74.4721ms)
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +3.06ms [127.0.0.1]
+  ✔ 2. Заборонені поля: whitelist + forbidNonWhitelisted (9.1419ms)
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +2.08ms [127.0.0.1]
+  ✔ 3. Рядок замість числової ціни: уніфікована помилка (6.0929ms)
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /clothes виконано за 1.08ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 201 +2.55ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /clothes виконано за 0.48ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 201 +1.90ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /clothes виконано за 0.69ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 201 +2.26ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /clothes виконано за 0.35ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 201 +1.58ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] GET /clothes?limit=5 виконано за 0.56ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?limit=5 200 +2.16ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?limit=0 400 +2.45ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?limit=-1 400 +1.90ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?limit=1.5 400 +1.33ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?limit=nope 400 +1.40ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?limit= 400 +1.65ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?limit=2&limit=3 400 +1.94ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?hackerField=1 400 +1.26ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] GET /clothes?search=%20Basic%20&limit=1 виконано за 0.33ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes?search=%20Basic%20&limit=1 200 +1.16ms [127.0.0.1]
+  ✔ 4. GET ?limit=5: реальне число та п’ять товарів (56.875ms)
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +2.56ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.03ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.11ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.01ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.04ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.01ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.03ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.05ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.11ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.03ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.23ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.20ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.10ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.23ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.15ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.34ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.07ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 400 +1.42ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /clothes виконано за 0.33ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 201 +1.52ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /clothes виконано за 0.39ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 201 +1.38ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /clothes виконано за 0.31ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 201 +1.09ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /clothes виконано за 0.29ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 201 +1.01ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /clothes виконано за 0.28ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /clothes 201 +1.03ms [127.0.0.1]
+  ✔ 5. Межі варіанта 3: ціна, розмір, матеріал, колір і назва (75.5414ms)
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] PATCH /clothes/3 виконано за 0.52ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] PATCH /clothes/3 200 +1.36ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] PATCH /clothes/3 400 +1.14ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] PATCH /clothes/3 400 +1.09ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] PATCH /clothes/3 400 +1.29ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] PATCH /clothes/3 400 +1.13ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] PATCH /clothes/3 400 +0.99ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] PATCH /clothes/3 400 +0.97ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] PATCH /clothes/3 виконано за 0.53ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] PATCH /clothes/3 200 +2.24ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] PATCH /clothes/3 виконано за 0.29ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] PATCH /clothes/3 200 +1.12ms [127.0.0.1]
+  ✔ 6. PATCH: часткове оновлення, валідація та новий slug (25.536ms)
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes/999999 404 +1.16ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /missing?limit=5 404 +0.46ms [127.0.0.1]
+  ✔ 7. Єдиний формат 404 для сервісу та невідомого маршруту (4.5899ms)
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] GET /clothes виконано за 0.20ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes 200 +1.07ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] GET /clothes виконано за 0.19ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes 200 +1.04ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] POST /orders виконано за 1.80ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /orders 201 +2.79ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] GET /orders виконано за 0.16ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /orders 200 +1.09ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /orders 404 +1.46ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] POST /orders 400 +1.19ms [127.0.0.1]
+  ✔ 8. Замовлення та request scope з лабораторної №5 (17.0056ms)
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] DELETE /clothes/3 виконано за 0.22ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] DELETE /clothes/3 204 +1.36ms [127.0.0.1]
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET /clothes/3 404 +0.92ms [127.0.0.1]
+  ✔ 9. DELETE: 204, заголовок часу та подальший 404 (5.6472ms)
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [TIMING] GET / виконано за 0.13ms
+[Nest] 28996  - 28.10.2026, 08:56:34     LOG [HTTP] GET / 200 +0.76ms [127.0.0.1]
+  ✔ 10. Кореневий маршрут та синтаксично неправильний JSON (4.0432ms)
+✔ Лабораторна №6: реальний HTTP-конвеєр та регресія модулів №5 (722.5313ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2627.6439
